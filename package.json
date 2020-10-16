@@ -22,5 +22,8 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0"
   }
 }
