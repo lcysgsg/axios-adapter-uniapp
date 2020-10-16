@@ -14,7 +14,7 @@ const instance = axios.create({
   adapter: uniappAdapter_TEST,
 })
 
-test('格式化 uniConfig', () => {
+test('校验 uniConfig', () => {
   let config
 
   config = {
@@ -124,4 +124,45 @@ test('格式化 uniConfig', () => {
     })
     expect(res.url).toBe('URL.com/upload?a=1&b=2')
   })
+})
+
+test('request alias', () => {
+  let config
+
+  config = {
+    params: {
+      a: 1,
+      b: 2,
+    },
+  }
+  instance.get('/user', config).then((res) => {
+    expect(res.method).toBe('get')
+    expect(res.url).toBe('URL.com/user?a=1&b=2')
+  })
+
+  config = {
+    data: {
+      a: 3,
+      b: 4,
+    },
+    headers: {
+      say: 'hi',
+    },
+  }
+  instance
+    .post(
+      '/user',
+      {
+        a: 1,
+        b: 2,
+      },
+      config
+    )
+    .then((res) => {
+      expect(res.headers.say).toEqual('hi')
+      expect(res.data).toEqual({
+        a: 1,
+        b: 2,
+      })
+    })
 })
