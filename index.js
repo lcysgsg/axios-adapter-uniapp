@@ -9,20 +9,8 @@ var buildFullPath = require('axios/lib/core/buildFullPath')
 // var parseHeaders = require("axios/lib/helpers/parseHeaders");
 // var isURLSameOrigin = require("axios/lib/helpers/isURLSameOrigin");
 // var createError = require("axios/lib/core/createError");
-
-function isMultiUpload(config) {
-  return Array.isArray(config.files) && config.files.length > 0
-}
-
-function isUploadFile(config) {
-  if (config.method === 'post') {
-    if (config.filePath && config.name) return true
-
-    if (isMultiUpload(config)) return true
-  }
-
-  return false
-}
+const isMultiUpload = require('./helper/isMultiUpload')
+const isUploadFile = require('./helper/isUploadFile')
 
 /**
  * 参数配置参考：
