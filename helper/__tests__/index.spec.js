@@ -1,7 +1,5 @@
-// const axios = require('axios')
-
-const isMultiUpload = require('../helper/isMultiUpload')
-const isUploadFile = require('../helper/isUploadFile')
+const isMultiUpload = require('../isMultiUpload')
+const isUploadFile = require('../isUploadFile')
 
 test('【helper】isMultiUpload', () => {
   let config
@@ -46,22 +44,3 @@ test('【helper】isUploadFile ', () => {
   }
   expect(isUploadFile(config)).toBe(true)
 })
-
-// const instance = axios.create({
-//   baseURL: 'BASEURL.com',
-//   adapter: axiosAdapterUniapp,
-// })
-
-// test('配置', () => {
-//   instance
-//     .get('/user')
-//     .then((result) => {
-//       console.log(result)
-//     })
-//     .catch((err) => {
-//       console.error(err)
-//     })
-//     .finally((res) => {
-//       console.log(res)
-//     })
-// })
