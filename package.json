@@ -1,6 +1,6 @@
 {
   "name": "axios-adapter-uniapp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "axios adapter for uni-app.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,7 @@
     "axios": "^0.20.0"
   },
   "devDependencies": {
+    "axios-adapter-uniapp": "^0.1.0",
     "eslint": "^7.11.0",
     "jest": "^26.5.3"
   }
