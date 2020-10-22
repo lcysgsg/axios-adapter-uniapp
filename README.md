@@ -6,6 +6,11 @@
 
 **欢迎 issue 和 pr**
 
+## TODO
+
+- [ ] examples
+- [ ] 测试用例是模拟的，仅校验了配置数据格式，考虑用 uniapp 接口做测试。 [https://uniapp.dcloud.io/collocation/auto/quick-start](https://uniapp.dcloud.io/collocation/auto/quick-start)
+
 ## 安装
 
 Using npm:
@@ -172,4 +177,3 @@ axios({
 // cancel the request
 cancel();
 ```
-
