@@ -1,6 +1,6 @@
 {
   "name": "axios-adapter-uniapp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "axios adapter for uni-app.",
   "main": "index.js",
   "scripts": {
