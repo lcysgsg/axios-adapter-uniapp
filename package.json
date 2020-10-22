@@ -12,7 +12,8 @@
     "adapter"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "helper"
   ],
   "repository": {
     "type": "git",
