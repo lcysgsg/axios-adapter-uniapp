@@ -8,8 +8,6 @@
 
 ## 安装
 
-**依赖 axios，要记得安装**
-
 Using npm:
 
 `$ npm install axios-adapter-uniapp`
