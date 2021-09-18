@@ -12,8 +12,9 @@
     "adapter"
   ],
   "files": [
+    "helper",
     "index.js",
-    "helper"
+    "index.d.ts"
   ],
   "repository": {
     "type": "git",
