@@ -11,7 +11,7 @@ const format = require('./helper/format')
  *   > uniapp upload  https://uniapp.dcloud.io/api/request/network-file
  * @param {object} config
  */
-module.exports = function uniappAdapter(config = {}) {
+function uniappAdapter(config = {}) {
   return new Promise(function dispatchUniApp(resolve, reject) {
     const uniConfig = format(config, resolve, reject)
 
@@ -38,3 +38,7 @@ module.exports = function uniappAdapter(config = {}) {
     }
   })
 }
+module.exports = uniappAdapter
+
+// Allow use of default import syntax in TypeScript
+module.exports.default = uniappAdapter
