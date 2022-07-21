@@ -4,7 +4,8 @@
   "description": "axios adapter for uni-app.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "np --no-cleanup --yolo --no-publish --any-branch"
   },
   "keywords": [
     "axios",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "eslint": "^7.11.0",
-    "jest": "^26.5.3"
+    "jest": "^26.5.3",
+    "np": "^7.6.2"
   }
 }
