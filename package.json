@@ -23,9 +23,7 @@
   },
   "author": "lcysgsg",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^0.27.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^8.34.0",
     "jest": "^26.5.3",
