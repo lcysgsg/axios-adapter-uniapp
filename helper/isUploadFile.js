@@ -1,6 +1,6 @@
-const isMultiUpload = require('./isMultiUpload')
+import isMultiUpload from './isMultiUpload'
 
-module.exports = function isUploadFile(config) {
+function isUploadFile(config) {
   if (config.method === 'post') {
     if (config.filePath && config.name) return true
 
@@ -9,3 +9,7 @@ module.exports = function isUploadFile(config) {
 
   return false
 }
+
+// module.exports = isUploadFile
+
+export default isUploadFile
