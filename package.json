@@ -27,7 +27,7 @@
     "axios": "^0.27.2"
   },
   "devDependencies": {
-    "eslint": "^7.11.0",
+    "eslint": "^8.34.0",
     "jest": "^26.5.3",
     "np": "^7.6.2"
   }

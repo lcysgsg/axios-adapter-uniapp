@@ -1,14 +1,16 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
-    es2020: true,
+    es2018: true,
     node: true,
     jest: true,
   },
-  extends: ['eslint:recommended'],
+  globals: {
+    uni: 'readonly',
+  },
+  extends: 'eslint:recommended',
   parserOptions: {
-    ecmaVersion: 11,
+    ecmaVersion: 2018,
     sourceType: 'module',
   },
   rules: {},
